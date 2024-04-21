@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ab.puzzle.mapper.AdminerMapper">
+
+    <resultMap id="BaseResultMap" type="com.ab.entity.Adminer">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="adminName" column="admin_name" jdbcType="VARCHAR"/>
+            <result property="adminImg" column="admin_img" jdbcType="VARCHAR"/>
+            <result property="adminPhone" column="admin_phone" jdbcType="VARCHAR"/>
+            <result property="adminAccount" column="admin_account" jdbcType="VARCHAR"/>
+            <result property="adminPassword" column="admin_password" jdbcType="VARCHAR"/>
+
+    </resultMap>
+
+
+</mapper>

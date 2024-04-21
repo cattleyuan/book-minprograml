@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ab.websocket.chat.singlechat.mapper.SingleChatMessageMapper">
+
+    <resultMap id="BaseResultMap" type="com.ab.websocket.chat.singlechat.domain.SingleChatMessage">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="receiverId" column="receiver_id" jdbcType="BIGINT"/>
+            <result property="senderId" column="sender_id" jdbcType="BIGINT"/>
+            <result property="messageText" column="message_text" jdbcType="VARCHAR"/>
+            <result property="sendTime" column="send_time" jdbcType="TIMESTAMP"/>
+            <result property="receiverDeleted" column="receiver_deleted" jdbcType="TINYINT"/>
+            <result property="senderDeleted" column="sender_deleted" jdbcType="TINYINT"/>
+            <result property="deleted" column="deleted" jdbcType="TINYINT"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+
+</mapper>

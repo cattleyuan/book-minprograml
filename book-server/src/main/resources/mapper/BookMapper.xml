@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ab.book.mapper.BookMapper">
+
+    <resultMap id="BaseResultMap" type="com.ab.book.domain.BookEntity">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="bookName" column="book_name" jdbcType="VARCHAR"/>
+            <result property="bookUrl" column="book_url" jdbcType="VARCHAR"/>
+            <result property="bookImg" column="book_img" jdbcType="VARCHAR"/>
+            <result property="bookDescription" column="book_description" jdbcType="VARCHAR"/>
+            <result property="deleted" column="deleted" jdbcType="TINYINT"/>
+            <result property="version" column="version" jdbcType="INTEGER"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="author" column="author" jdbcType="VARCHAR"/>
+            <result property="status" column="status" jdbcType="TINYINT"/>
+            <result property="permission" column="Permission" jdbcType="TINYINT"/>
+    </resultMap>
+
+</mapper>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ab.dcomment.mapper.DynamicCommentMapper">
+
+    <resultMap id="BaseResultMap" type="com.ab.dcomment.domain.DynamicComment">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="dynamicId" column="dynamic_id" jdbcType="BIGINT"/>
+            <result property="commentText" column="comment_text" jdbcType="VARCHAR"/>
+            <result property="commentTime" column="comment_time" jdbcType="TIMESTAMP"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="deleted" column="deleted" jdbcType="TINYINT"/>
+            <result property="version" column="version" jdbcType="INTEGER"/>
+    </resultMap>
+
+
+</mapper>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ab.membership.mapper.MemberShipMapper">
+
+    <resultMap id="BaseResultMap" type="com.ab.membership.domain.entity.MemberShip">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="userId" column="user_id" jdbcType="BIGINT"/>
+            <result property="memberType" column="member_type" jdbcType="INTEGER"/>
+            <result property="registrationDate" column="registration_date" jdbcType="TIMESTAMP"/>
+            <result property="expirationDate" column="expiration_date" jdbcType="TIMESTAMP"/>
+
+            <result property="memberPoints" column="member_points" jdbcType="INTEGER"/>
+            <result property="isActive" column="is_active" jdbcType="TINYINT"/>
+            <result property="version" column="version" jdbcType="INTEGER"/>
+    </resultMap>
+
+</mapper>

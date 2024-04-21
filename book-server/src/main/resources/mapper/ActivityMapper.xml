@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ab.activity.mapper.ActivityMapper">
+
+    <resultMap id="BaseResultMap" type="com.ab.activity.domain.Activity">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="adminId" column="admin_id" jdbcType="BIGINT"/>
+            <result property="contentUrl" column="content_url" jdbcType="VARCHAR"/>
+            <result property="imgUrl" column="img_url" jdbcType="VARCHAR"/>
+            <result property="deleted" column="deleted" jdbcType="TINYINT"/>
+            <result property="version" column="version" jdbcType="INTEGER"/>
+            <result property="endTime" column="end_time" jdbcType="TIMESTAMP"/>
+            <result property="publishTime" column="publish_time" jdbcType="TIMESTAMP"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+       
+
+</mapper>
