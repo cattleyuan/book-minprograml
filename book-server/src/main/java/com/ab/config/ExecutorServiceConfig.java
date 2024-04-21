@@ -14,10 +14,10 @@ import java.util.concurrent.*;
 @Configuration
 public class ExecutorServiceConfig {
 
-    private static Integer corePoolSize=5;
-    private static Integer maximumPoolSize=10;
-    private static Integer keepAliveMinutes=5;
-    private static Integer queueCapacity=5;
+    private static Integer corePoolSize=10;
+    private static Integer maximumPoolSize=30;
+    private static Integer keepAliveMinutes=10;
+    private static Integer queueCapacity=10;
 
     @Bean("pool")
     ExecutorService executorService(){
